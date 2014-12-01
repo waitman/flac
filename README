@@ -37,6 +37,7 @@ cd to src/share/json-c, then run # bash autogen.sh, then # ./configure and
 
 then switch back up to project root and build.
 
+Modifications have not been tested on Windows.
 
 
 
