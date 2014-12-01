@@ -1,0 +1,56 @@
+Script started on Sun Nov 30 08:09:34 2014
+waitman@afia:~/flac/src/share/json-c % make
+make  all-recursive
+Making all in .
+/bin/sh ./libtool  --tag=CC    --mode=compile cc -DHAVE_CONFIG_H  -I.     -Wall -Werror -Wno-error=deprecated-declarations -Wextra -Wwrite-strings -Wno-unused-parameter -std=gnu99 -D_GNU_SOURCE -D_REENTRANT -g -O2 -MT arraylist.lo -MD -MP -MF .deps/arraylist.Tpo -c -o arraylist.lo arraylist.c
+libtool: compile:  cc -DHAVE_CONFIG_H -I. -Wall -Werror -Wno-error=deprecated-declarations -Wextra -Wwrite-strings -Wno-unused-parameter -std=gnu99 -D_GNU_SOURCE -D_REENTRANT -g -O2 -MT arraylist.lo -MD -MP -MF .deps/arraylist.Tpo -c arraylist.c  -fPIC -DPIC -o .libs/arraylist.o
+libtool: compile:  cc -DHAVE_CONFIG_H -I. -Wall -Werror -Wno-error=deprecated-declarations -Wextra -Wwrite-strings -Wno-unused-parameter -std=gnu99 -D_GNU_SOURCE -D_REENTRANT -g -O2 -MT arraylist.lo -MD -MP -MF .deps/arraylist.Tpo -c arraylist.c -o arraylist.o >/dev/null 2>&1
+mv -f .deps/arraylist.Tpo .deps/arraylist.Plo
+/bin/sh ./libtool  --tag=CC    --mode=compile cc -DHAVE_CONFIG_H  -I.     -Wall -Werror -Wno-error=deprecated-declarations -Wextra -Wwrite-strings -Wno-unused-parameter -std=gnu99 -D_GNU_SOURCE -D_REENTRANT -g -O2 -MT debug.lo -MD -MP -MF .deps/debug.Tpo -c -o debug.lo debug.c
+libtool: compile:  cc -DHAVE_CONFIG_H -I. -Wall -Werror -Wno-error=deprecated-declarations -Wextra -Wwrite-strings -Wno-unused-parameter -std=gnu99 -D_GNU_SOURCE -D_REENTRANT -g -O2 -MT debug.lo -MD -MP -MF .deps/debug.Tpo -c debug.c  -fPIC -DPIC -o .libs/debug.o
+libtool: compile:  cc -DHAVE_CONFIG_H -I. -Wall -Werror -Wno-error=deprecated-declarations -Wextra -Wwrite-strings -Wno-unused-parameter -std=gnu99 -D_GNU_SOURCE -D_REENTRANT -g -O2 -MT debug.lo -MD -MP -MF .deps/debug.Tpo -c debug.c -o debug.o >/dev/null 2>&1
+mv -f .deps/debug.Tpo .deps/debug.Plo
+/bin/sh ./libtool  --tag=CC    --mode=compile cc -DHAVE_CONFIG_H  -I.     -Wall -Werror -Wno-error=deprecated-declarations -Wextra -Wwrite-strings -Wno-unused-parameter -std=gnu99 -D_GNU_SOURCE -D_REENTRANT -g -O2 -MT json_c_version.lo -MD -MP -MF .deps/json_c_version.Tpo -c -o json_c_version.lo json_c_version.c
+libtool: compile:  cc -DHAVE_CONFIG_H -I. -Wall -Werror -Wno-error=deprecated-declarations -Wextra -Wwrite-strings -Wno-unused-parameter -std=gnu99 -D_GNU_SOURCE -D_REENTRANT -g -O2 -MT json_c_version.lo -MD -MP -MF .deps/json_c_version.Tpo -c json_c_version.c  -fPIC -DPIC -o .libs/json_c_version.o
+libtool: compile:  cc -DHAVE_CONFIG_H -I. -Wall -Werror -Wno-error=deprecated-declarations -Wextra -Wwrite-strings -Wno-unused-parameter -std=gnu99 -D_GNU_SOURCE -D_REENTRANT -g -O2 -MT json_c_version.lo -MD -MP -MF .deps/json_c_version.Tpo -c json_c_version.c -o json_c_version.o >/dev/null 2>&1
+mv -f .deps/json_c_version.Tpo .deps/json_c_version.Plo
+/bin/sh ./libtool  --tag=CC    --mode=compile cc -DHAVE_CONFIG_H  -I.     -Wall -Werror -Wno-error=deprecated-declarations -Wextra -Wwrite-strings -Wno-unused-parameter -std=gnu99 -D_GNU_SOURCE -D_REENTRANT -g -O2 -MT json_object.lo -MD -MP -MF .deps/json_object.Tpo -c -o json_object.lo json_object.c
+libtool: compile:  cc -DHAVE_CONFIG_H -I. -Wall -Werror -Wno-error=deprecated-declarations -Wextra -Wwrite-strings -Wno-unused-parameter -std=gnu99 -D_GNU_SOURCE -D_REENTRANT -g -O2 -MT json_object.lo -MD -MP -MF .deps/json_object.Tpo -c json_object.c  -fPIC -DPIC -o .libs/json_object.o
+libtool: compile:  cc -DHAVE_CONFIG_H -I. -Wall -Werror -Wno-error=deprecated-declarations -Wextra -Wwrite-strings -Wno-unused-parameter -std=gnu99 -D_GNU_SOURCE -D_REENTRANT -g -O2 -MT json_object.lo -MD -MP -MF .deps/json_object.Tpo -c json_object.c -o json_object.o >/dev/null 2>&1
+mv -f .deps/json_object.Tpo .deps/json_object.Plo
+/bin/sh ./libtool  --tag=CC    --mode=compile cc -DHAVE_CONFIG_H  -I.     -Wall -Werror -Wno-error=deprecated-declarations -Wextra -Wwrite-strings -Wno-unused-parameter -std=gnu99 -D_GNU_SOURCE -D_REENTRANT -g -O2 -MT json_object_iterator.lo -MD -MP -MF .deps/json_object_iterator.Tpo -c -o json_object_iterator.lo json_object_iterator.c
+libtool: compile:  cc -DHAVE_CONFIG_H -I. -Wall -Werror -Wno-error=deprecated-declarations -Wextra -Wwrite-strings -Wno-unused-parameter -std=gnu99 -D_GNU_SOURCE -D_REENTRANT -g -O2 -MT json_object_iterator.lo -MD -MP -MF .deps/json_object_iterator.Tpo -c json_object_iterator.c  -fPIC -DPIC -o .libs/json_object_iterator.o
+libtool: compile:  cc -DHAVE_CONFIG_H -I. -Wall -Werror -Wno-error=deprecated-declarations -Wextra -Wwrite-strings -Wno-unused-parameter -std=gnu99 -D_GNU_SOURCE -D_REENTRANT -g -O2 -MT json_object_iterator.lo -MD -MP -MF .deps/json_object_iterator.Tpo -c json_object_iterator.c -o json_object_iterator.o >/dev/null 2>&1
+mv -f .deps/json_object_iterator.Tpo .deps/json_object_iterator.Plo
+/bin/sh ./libtool  --tag=CC    --mode=compile cc -DHAVE_CONFIG_H  -I.     -Wall -Werror -Wno-error=deprecated-declarations -Wextra -Wwrite-strings -Wno-unused-parameter -std=gnu99 -D_GNU_SOURCE -D_REENTRANT -g -O2 -MT json_tokener.lo -MD -MP -MF .deps/json_tokener.Tpo -c -o json_tokener.lo json_tokener.c
+libtool: compile:  cc -DHAVE_CONFIG_H -I. -Wall -Werror -Wno-error=deprecated-declarations -Wextra -Wwrite-strings -Wno-unused-parameter -std=gnu99 -D_GNU_SOURCE -D_REENTRANT -g -O2 -MT json_tokener.lo -MD -MP -MF .deps/json_tokener.Tpo -c json_tokener.c  -fPIC -DPIC -o .libs/json_tokener.o
+libtool: compile:  cc -DHAVE_CONFIG_H -I. -Wall -Werror -Wno-error=deprecated-declarations -Wextra -Wwrite-strings -Wno-unused-parameter -std=gnu99 -D_GNU_SOURCE -D_REENTRANT -g -O2 -MT json_tokener.lo -MD -MP -MF .deps/json_tokener.Tpo -c json_tokener.c -o json_tokener.o >/dev/null 2>&1
+mv -f .deps/json_tokener.Tpo .deps/json_tokener.Plo
+/bin/sh ./libtool  --tag=CC    --mode=compile cc -DHAVE_CONFIG_H  -I.     -Wall -Werror -Wno-error=deprecated-declarations -Wextra -Wwrite-strings -Wno-unused-parameter -std=gnu99 -D_GNU_SOURCE -D_REENTRANT -g -O2 -MT json_util.lo -MD -MP -MF .deps/json_util.Tpo -c -o json_util.lo json_util.c
+libtool: compile:  cc -DHAVE_CONFIG_H -I. -Wall -Werror -Wno-error=deprecated-declarations -Wextra -Wwrite-strings -Wno-unused-parameter -std=gnu99 -D_GNU_SOURCE -D_REENTRANT -g -O2 -MT json_util.lo -MD -MP -MF .deps/json_util.Tpo -c json_util.c  -fPIC -DPIC -o .libs/json_util.o
+libtool: compile:  cc -DHAVE_CONFIG_H -I. -Wall -Werror -Wno-error=deprecated-declarations -Wextra -Wwrite-strings -Wno-unused-parameter -std=gnu99 -D_GNU_SOURCE -D_REENTRANT -g -O2 -MT json_util.lo -MD -MP -MF .deps/json_util.Tpo -c json_util.c -o json_util.o >/dev/null 2>&1
+mv -f .deps/json_util.Tpo .deps/json_util.Plo
+/bin/sh ./libtool  --tag=CC    --mode=compile cc -DHAVE_CONFIG_H  -I.     -Wall -Werror -Wno-error=deprecated-declarations -Wextra -Wwrite-strings -Wno-unused-parameter -std=gnu99 -D_GNU_SOURCE -D_REENTRANT -g -O2 -MT linkhash.lo -MD -MP -MF .deps/linkhash.Tpo -c -o linkhash.lo linkhash.c
+libtool: compile:  cc -DHAVE_CONFIG_H -I. -Wall -Werror -Wno-error=deprecated-declarations -Wextra -Wwrite-strings -Wno-unused-parameter -std=gnu99 -D_GNU_SOURCE -D_REENTRANT -g -O2 -MT linkhash.lo -MD -MP -MF .deps/linkhash.Tpo -c linkhash.c  -fPIC -DPIC -o .libs/linkhash.o
+libtool: compile:  cc -DHAVE_CONFIG_H -I. -Wall -Werror -Wno-error=deprecated-declarations -Wextra -Wwrite-strings -Wno-unused-parameter -std=gnu99 -D_GNU_SOURCE -D_REENTRANT -g -O2 -MT linkhash.lo -MD -MP -MF .deps/linkhash.Tpo -c linkhash.c -o linkhash.o >/dev/null 2>&1
+mv -f .deps/linkhash.Tpo .deps/linkhash.Plo
+/bin/sh ./libtool  --tag=CC    --mode=compile cc -DHAVE_CONFIG_H  -I.     -Wall -Werror -Wno-error=deprecated-declarations -Wextra -Wwrite-strings -Wno-unused-parameter -std=gnu99 -D_GNU_SOURCE -D_REENTRANT -g -O2 -MT printbuf.lo -MD -MP -MF .deps/printbuf.Tpo -c -o printbuf.lo printbuf.c
+libtool: compile:  cc -DHAVE_CONFIG_H -I. -Wall -Werror -Wno-error=deprecated-declarations -Wextra -Wwrite-strings -Wno-unused-parameter -std=gnu99 -D_GNU_SOURCE -D_REENTRANT -g -O2 -MT printbuf.lo -MD -MP -MF .deps/printbuf.Tpo -c printbuf.c  -fPIC -DPIC -o .libs/printbuf.o
+libtool: compile:  cc -DHAVE_CONFIG_H -I. -Wall -Werror -Wno-error=deprecated-declarations -Wextra -Wwrite-strings -Wno-unused-parameter -std=gnu99 -D_GNU_SOURCE -D_REENTRANT -g -O2 -MT printbuf.lo -MD -MP -MF .deps/printbuf.Tpo -c printbuf.c -o printbuf.o >/dev/null 2>&1
+mv -f .deps/printbuf.Tpo .deps/printbuf.Plo
+/bin/sh ./libtool  --tag=CC    --mode=compile cc -DHAVE_CONFIG_H  -I.     -Wall -Werror -Wno-error=deprecated-declarations -Wextra -Wwrite-strings -Wno-unused-parameter -std=gnu99 -D_GNU_SOURCE -D_REENTRANT -g -O2 -MT random_seed.lo -MD -MP -MF .deps/random_seed.Tpo -c -o random_seed.lo random_seed.c
+libtool: compile:  cc -DHAVE_CONFIG_H -I. -Wall -Werror -Wno-error=deprecated-declarations -Wextra -Wwrite-strings -Wno-unused-parameter -std=gnu99 -D_GNU_SOURCE -D_REENTRANT -g -O2 -MT random_seed.lo -MD -MP -MF .deps/random_seed.Tpo -c random_seed.c  -fPIC -DPIC -o .libs/random_seed.o
+libtool: compile:  cc -DHAVE_CONFIG_H -I. -Wall -Werror -Wno-error=deprecated-declarations -Wextra -Wwrite-strings -Wno-unused-parameter -std=gnu99 -D_GNU_SOURCE -D_REENTRANT -g -O2 -MT random_seed.lo -MD -MP -MF .deps/random_seed.Tpo -c random_seed.c -o random_seed.o >/dev/null 2>&1
+mv -f .deps/random_seed.Tpo .deps/random_seed.Plo
+/bin/sh ./libtool  --tag=CC    --mode=link cc -Wall -Werror -Wno-error=deprecated-declarations -Wextra -Wwrite-strings -Wno-unused-parameter -std=gnu99 -D_GNU_SOURCE -D_REENTRANT -g -O2  -version-info 2:0:0 -no-undefined  -o libjson-c.la -rpath /usr/local/lib arraylist.lo debug.lo json_c_version.lo  json_object.lo json_object_iterator.lo json_tokener.lo  json_util.lo linkhash.lo printbuf.lo random_seed.lo  
+libtool: link: cc -shared  -fPIC -DPIC  .libs/arraylist.o .libs/debug.o .libs/json_c_version.o .libs/json_object.o .libs/json_object_iterator.o .libs/json_tokener.o .libs/json_util.o .libs/linkhash.o .libs/printbuf.o .libs/random_seed.o    -g -O2   -Wl,-soname -Wl,libjson-c.so.2 -o .libs/libjson-c.so.2.0.0
+libtool: link: (cd ".libs" && rm -f "libjson-c.so.2" && ln -s "libjson-c.so.2.0.0" "libjson-c.so.2")
+libtool: link: (cd ".libs" && rm -f "libjson-c.so" && ln -s "libjson-c.so.2.0.0" "libjson-c.so")
+libtool: link: ar cru .libs/libjson-c.a  arraylist.o debug.o json_c_version.o json_object.o json_object_iterator.o json_tokener.o json_util.o linkhash.o printbuf.o random_seed.o
+libtool: link: ranlib .libs/libjson-c.a
+libtool: link: ( cd ".libs" && rm -f "libjson-c.la" && ln -s "../libjson-c.la" "libjson-c.la" )
+Making all in tests
+waitman@afia:~/flac/src/share/json-c % exit
+exit
+
+Script done on Sun Nov 30 08:09:42 2014
