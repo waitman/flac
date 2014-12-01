@@ -17,7 +17,7 @@
 #  distribution.
 
 .PHONY: all getopt grabbag replaygain_analysis replaygain_synthesis utf8
-all: getopt replaygain_analysis grabbag replaygain_synthesis utf8
+all: getopt replaygain_analysis grabbag replaygain_synthesis utf8 json-c
 
 DEFAULT_CONFIG = release
 
@@ -46,6 +46,9 @@ replaygain_synthesis:
 utf8:
 	(cd $@ ; $(MAKE) -f Makefile.lite $(CONFIG))
 
+json-c: 
+	(cd $@ ; $(MAKE) -f Makefile.lite $(CONFIG))
+
 win_utf8_io:
 	(cd $@ ; $(MAKE) -f Makefile.lite $(CONFIG))
 
@@ -56,3 +59,4 @@ clean:
 	-(cd replaygain_synthesis ; $(MAKE) -f Makefile.lite clean)
 	-(cd utf8 ; $(MAKE) -f Makefile.lite clean)
 	-(cd win_utf8_io ; $(MAKE) -f Makefile.lite clean)
+	-(cd json-c ; $(MAKE) -f Makefile.lite clean)

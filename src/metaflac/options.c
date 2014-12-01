@@ -93,6 +93,7 @@ struct share__option long_options_[] = {
 	/* major operation arguments */
 	{ "block-number", 1, 0, 0 },
 	{ "block-type", 1, 0, 0 },
+	{ "output-json", 0, 0, 0 }, /* mod wcg */
 	{ "except-block-type", 1, 0, 0 },
 	{ "data-format", 1, 0, 0 },
 	{ "application-data-format", 1, 0, 0 },
@@ -136,6 +137,7 @@ void init_options(CommandLineOptions *options)
 	options->show_long_help = false;
 	options->show_version = false;
 	options->application_data_format_is_hexdump = false;
+	options->output_json = false;
 
 	options->ops.operations = 0;
 	options->ops.num_operations = 0;
@@ -366,6 +368,9 @@ FLAC__bool parse_option(int option_index, const char *option_argument, CommandLi
 	}
 	else if(0 == strcmp(opt, "dont-use-padding")) {
 		options->use_padding = false;
+	}
+	else if(0 == strcmp(opt, "output-json")) {  /* mod wcg */
+		options->output_json = true;
 	}
 	else if(0 == strcmp(opt, "no-cued-seekpoints")) {
 		options->cued_seekpoints = false;

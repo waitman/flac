@@ -1,0 +1,617 @@
+Script started on Sun Nov 30 08:38:14 2014
+waitman@afia:~/flac % make
+make  all-recursive
+Making all in doc
+Making all in .
+doxygen Doxyfile
+Warning: Tag `USE_WINDOWS_ENCODING' at line 64 of file `Doxyfile' has become obsolete.
+         To avoid this warning please remove this line from your configuration file or upgrade it using "doxygen -u"
+Warning: Tag `DETAILS_AT_TOP' at line 156 of file `Doxyfile' has become obsolete.
+         To avoid this warning please remove this line from your configuration file or upgrade it using "doxygen -u"
+Warning: Tag `SHOW_DIRECTORIES' at line 382 of file `Doxyfile' has become obsolete.
+         To avoid this warning please remove this line from your configuration file or upgrade it using "doxygen -u"
+Warning: Tag `HTML_ALIGN_MEMBERS' at line 650 of file `Doxyfile' has become obsolete.
+         To avoid this warning please remove this line from your configuration file or upgrade it using "doxygen -u"
+Warning: Tag `XML_SCHEMA' at line 882 of file `Doxyfile' has become obsolete.
+         To avoid this warning please remove this line from your configuration file or upgrade it using "doxygen -u"
+Warning: Tag `XML_DTD' at line 888 of file `Doxyfile' has become obsolete.
+         To avoid this warning please remove this line from your configuration file or upgrade it using "doxygen -u"
+Warning: Tag `MAX_DOT_GRAPH_WIDTH' at line 1164 of file `Doxyfile' has become obsolete.
+         To avoid this warning please remove this line from your configuration file or upgrade it using "doxygen -u"
+Warning: Tag `MAX_DOT_GRAPH_HEIGHT' at line 1172 of file `Doxyfile' has become obsolete.
+         To avoid this warning please remove this line from your configuration file or upgrade it using "doxygen -u"
+Notice: Output directory `doxytmp' does not exist. I have created it for you.
+Searching for include files...
+Searching for example files...
+Searching for images...
+Searching for dot files...
+Searching for msc files...
+Searching for dia files...
+Searching for files to exclude
+Searching for files to process...
+Searching for files in directory /xj/waitman/flac/include/FLAC
+Searching for files in directory /xj/waitman/flac/include/FLAC++
+Reading and parsing tag files
+Parsing files
+Preprocessing /xj/waitman/flac/include/FLAC/all.h...
+Parsing file /xj/waitman/flac/include/FLAC/all.h...
+Preprocessing /xj/waitman/flac/include/FLAC/assert.h...
+Parsing file /xj/waitman/flac/include/FLAC/assert.h...
+Preprocessing /xj/waitman/flac/include/FLAC/callback.h...
+Parsing file /xj/waitman/flac/include/FLAC/callback.h...
+Preprocessing /xj/waitman/flac/include/FLAC/export.h...
+Parsing file /xj/waitman/flac/include/FLAC/export.h...
+Preprocessing /xj/waitman/flac/include/FLAC/format.h...
+Parsing file /xj/waitman/flac/include/FLAC/format.h...
+Preprocessing /xj/waitman/flac/include/FLAC/metadata.h...
+Parsing file /xj/waitman/flac/include/FLAC/metadata.h...
+Preprocessing /xj/waitman/flac/include/FLAC/ordinals.h...
+Parsing file /xj/waitman/flac/include/FLAC/ordinals.h...
+Preprocessing /xj/waitman/flac/include/FLAC/stream_decoder.h...
+Parsing file /xj/waitman/flac/include/FLAC/stream_decoder.h...
+\*Preprocessing /xj/waitman/flac/include/FLAC/stream_encoder.h...
+Parsing file /xj/waitman/flac/include/FLAC/stream_encoder.h...
+\*Preprocessing /xj/waitman/flac/include/FLAC++/all.h...
+Parsing file /xj/waitman/flac/include/FLAC++/all.h...
+Preprocessing /xj/waitman/flac/include/FLAC++/decoder.h...
+Parsing file /xj/waitman/flac/include/FLAC++/decoder.h...
+Preprocessing /xj/waitman/flac/include/FLAC++/encoder.h...
+Parsing file /xj/waitman/flac/include/FLAC++/encoder.h...
+Preprocessing /xj/waitman/flac/include/FLAC++/export.h...
+Parsing file /xj/waitman/flac/include/FLAC++/export.h...
+Preprocessing /xj/waitman/flac/include/FLAC++/metadata.h...
+Parsing file /xj/waitman/flac/include/FLAC++/metadata.h...
+Building group list...
+Building directory list...
+Building namespace list...
+Building file list...
+Building class list...
+Associating documentation with classes...
+Computing nesting relations for classes...
+Building example list...
+Searching for enumerations...
+Searching for documented typedefs...
+Searching for members imported via using declarations...
+Searching for included using directives...
+Searching for documented variables...
+Building interface member list...
+Building member list...
+Searching for friends...
+Searching for documented defines...
+Computing class inheritance relations...
+Computing class usage relations...
+Flushing cached template relations that have become invalid...
+Creating members for template instances...
+Computing class relations...
+Add enum values to enums...
+Searching for member function documentation...
+Building page list...
+Search for main page...
+Computing page relations...
+Determining the scope of groups...
+Sorting lists...
+Freeing entry tree
+Determining which enums are documented
+Computing member relations...
+Building full member lists recursively...
+Adding members to member groups.
+Distributing member group documentation.
+Computing member references...
+Inheriting documentation...
+Generating disk names...
+Adding source references...
+Adding xrefitems...
+Sorting member lists...
+Computing dependencies between directories...
+Generating citations page...
+Counting data structures...
+Resolving user defined references...
+Finding anchors and sections in the documentation...
+Transferring function references...
+Combining using relations...
+Adding members to index pages...
+Generating style sheet...
+Generating example documentation...
+Generating file sources...
+Generating code for file include/FLAC++/decoder.h...
+/xj/waitman/flac/include/FLAC++/export.h:38: warning: explicit link request to 'defines' could not be resolved
+Generating code for file include/FLAC++/encoder.h...
+Generating code for file include/FLAC/all.h...
+/xj/waitman/flac/include/FLAC/export.h:38: warning: explicit link request to 'defines' could not be resolved
+Generating code for file include/FLAC++/all.h...
+Generating code for file include/FLAC/assert.h...
+Generating code for file include/FLAC/callback.h...
+Generating code for file include/FLAC/export.h...
+Generating code for file include/FLAC++/export.h...
+Generating code for file include/FLAC/format.h...
+Generating code for file include/FLAC/metadata.h...
+Generating code for file include/FLAC++/metadata.h...
+Generating code for file include/FLAC/ordinals.h...
+Generating code for file include/FLAC/stream_decoder.h...
+Generating code for file include/FLAC/stream_encoder.h...
+Generating file documentation...
+Generating docs for file include/FLAC++/decoder.h...
+Generating docs for file include/FLAC++/encoder.h...
+Generating docs for file include/FLAC/callback.h...
+Generating docs for file include/FLAC/export.h...
+/xj/waitman/flac/include/FLAC/export.h:60: warning: Member FLAC_API (macro definition) of group flac_export is not documented.
+/xj/waitman/flac/include/FLAC/export.h:38: warning: explicit link request to 'defines' could not be resolved
+Generating docs for file include/FLAC++/export.h...
+/xj/waitman/flac/include/FLAC++/export.h:60: warning: Member FLACPP_API (macro definition) of group flacpp_export is not documented.
+/xj/waitman/flac/include/FLAC++/export.h:80: warning: Member FLACPP_API_VERSION_CURRENT (macro definition) of group flacpp_export is not documented.
+/xj/waitman/flac/include/FLAC++/export.h:81: warning: Member FLACPP_API_VERSION_REVISION (macro definition) of group flacpp_export is not documented.
+/xj/waitman/flac/include/FLAC++/export.h:82: warning: Member FLACPP_API_VERSION_AGE (macro definition) of group flacpp_export is not documented.
+/xj/waitman/flac/include/FLAC++/export.h:38: warning: explicit link request to 'defines' could not be resolved
+Generating docs for file include/FLAC/format.h...
+Generating docs for file include/FLAC/metadata.h...
+/xj/waitman/flac/include/FLAC/metadata.h:721: warning: Member FLAC__Metadata_ChainStatus (enumeration) of group flac_metadata_level2 is not documented.
+Generating docs for file include/FLAC++/metadata.h...
+Generating docs for file include/FLAC/stream_decoder.h...
+Generating docs for file include/FLAC/stream_encoder.h...
+Generating page documentation...
+Generating group documentation...
+/xj/waitman/flac/include/FLAC/all.h:162: warning: explicit link request to 'defines' could not be resolved
+/xj/waitman/flac/include/FLAC/all.h:164: warning: explicit link request to 'defines' could not be resolved
+/xj/waitman/flac/include/FLAC/export.h:60: warning: Member FLAC_API (macro definition) of group flac_export is not documented.
+/xj/waitman/flac/include/FLAC/export.h:48: warning: explicit link request to 'defines' could not be resolved
+/xj/waitman/flac/include/FLAC/export.h:77: warning: explicit link request to 'defines' could not be resolved
+/xj/waitman/flac/include/FLAC/metadata.h:721: warning: Member FLAC__Metadata_ChainStatus (enumeration) of group flac_metadata_level2 is not documented.
+/xj/waitman/flac/include/FLAC++/export.h:60: warning: Member FLACPP_API (macro definition) of group flacpp_export is not documented.
+/xj/waitman/flac/include/FLAC++/export.h:80: warning: Member FLACPP_API_VERSION_CURRENT (macro definition) of group flacpp_export is not documented.
+/xj/waitman/flac/include/FLAC++/export.h:81: warning: Member FLACPP_API_VERSION_REVISION (macro definition) of group flacpp_export is not documented.
+/xj/waitman/flac/include/FLAC++/export.h:82: warning: Member FLACPP_API_VERSION_AGE (macro definition) of group flacpp_export is not documented.
+/xj/waitman/flac/include/FLAC++/export.h:48: warning: explicit link request to 'defines' could not be resolved
+/xj/waitman/flac/include/FLAC++/metadata.h:116: warning: Member Prototype(const ::FLAC__StreamMetadata &) (function) of class FLAC::Metadata::Prototype is not documented.
+/xj/waitman/flac/include/FLAC++/metadata.h:117: warning: Member Prototype(const ::FLAC__StreamMetadata *) (function) of class FLAC::Metadata::Prototype is not documented.
+Generating class documentation...
+Generating docs for compound FLAC__EntropyCodingMethod...
+/xj/waitman/flac/include/FLAC/format.h:256: warning: Member type (variable) of class FLAC__EntropyCodingMethod is not documented.
+/xj/waitman/flac/include/FLAC/format.h:259: warning: Member data (variable) of class FLAC__EntropyCodingMethod is not documented.
+Generating docs for compound FLAC__EntropyCodingMethod_PartitionedRice...
+Generating docs for compound FLAC__EntropyCodingMethod_PartitionedRiceContents...
+Generating docs for compound FLAC__Frame...
+/xj/waitman/flac/include/FLAC/format.h:474: warning: Member header (variable) of class FLAC__Frame is not documented.
+/xj/waitman/flac/include/FLAC/format.h:475: warning: Member subframes[FLAC__MAX_CHANNELS] (variable) of class FLAC__Frame is not documented.
+/xj/waitman/flac/include/FLAC/format.h:476: warning: Member footer (variable) of class FLAC__Frame is not documented.
+Generating docs for compound FLAC__FrameFooter...
+Generating docs for compound FLAC__FrameHeader...
+Generating docs for compound FLAC__IOCallbacks...
+/xj/waitman/flac/include/FLAC/callback.h:171: warning: Member read (variable) of class FLAC__IOCallbacks is not documented.
+/xj/waitman/flac/include/FLAC/callback.h:172: warning: Member write (variable) of class FLAC__IOCallbacks is not documented.
+/xj/waitman/flac/include/FLAC/callback.h:173: warning: Member seek (variable) of class FLAC__IOCallbacks is not documented.
+/xj/waitman/flac/include/FLAC/callback.h:174: warning: Member tell (variable) of class FLAC__IOCallbacks is not documented.
+/xj/waitman/flac/include/FLAC/callback.h:175: warning: Member eof (variable) of class FLAC__IOCallbacks is not documented.
+/xj/waitman/flac/include/FLAC/callback.h:176: warning: Member close (variable) of class FLAC__IOCallbacks is not documented.
+Generating docs for compound FLAC__StreamDecoder...
+/xj/waitman/flac/include/FLAC/stream_decoder.h:464: warning: Member protected_ (variable) of class FLAC__StreamDecoder is not documented.
+/xj/waitman/flac/include/FLAC/stream_decoder.h:465: warning: Member private_ (variable) of class FLAC__StreamDecoder is not documented.
+Generating docs for compound FLAC__StreamEncoder...
+/xj/waitman/flac/include/FLAC/stream_encoder.h:466: warning: Member protected_ (variable) of class FLAC__StreamEncoder is not documented.
+/xj/waitman/flac/include/FLAC/stream_encoder.h:467: warning: Member private_ (variable) of class FLAC__StreamEncoder is not documented.
+Generating docs for compound FLAC__StreamMetadata...
+Generating docs for compound FLAC__StreamMetadata_Application...
+/xj/waitman/flac/include/FLAC/format.h:566: warning: Member id[4] (variable) of class FLAC__StreamMetadata_Application is not documented.
+/xj/waitman/flac/include/FLAC/format.h:567: warning: Member data (variable) of class FLAC__StreamMetadata_Application is not documented.
+Generating docs for compound FLAC__StreamMetadata_CueSheet...
+Generating docs for compound FLAC__StreamMetadata_CueSheet_Index...
+Generating docs for compound FLAC__StreamMetadata_CueSheet_Track...
+Generating docs for compound FLAC__StreamMetadata_Padding...
+Generating docs for compound FLAC__StreamMetadata_Picture...
+Generating docs for compound FLAC__StreamMetadata_SeekPoint...
+Generating docs for compound FLAC__StreamMetadata_SeekTable...
+/xj/waitman/flac/include/FLAC/format.h:613: warning: Member num_points (variable) of class FLAC__StreamMetadata_SeekTable is not documented.
+/xj/waitman/flac/include/FLAC/format.h:614: warning: Member points (variable) of class FLAC__StreamMetadata_SeekTable is not documented.
+Generating docs for compound FLAC__StreamMetadata_StreamInfo...
+/xj/waitman/flac/include/FLAC/format.h:530: warning: Member min_blocksize (variable) of class FLAC__StreamMetadata_StreamInfo is not documented.
+/xj/waitman/flac/include/FLAC/format.h:530: warning: Member max_blocksize (variable) of class FLAC__StreamMetadata_StreamInfo is not documented.
+/xj/waitman/flac/include/FLAC/format.h:531: warning: Member min_framesize (variable) of class FLAC__StreamMetadata_StreamInfo is not documented.
+/xj/waitman/flac/include/FLAC/format.h:531: warning: Member max_framesize (variable) of class FLAC__StreamMetadata_StreamInfo is not documented.
+/xj/waitman/flac/include/FLAC/format.h:532: warning: Member sample_rate (variable) of class FLAC__StreamMetadata_StreamInfo is not documented.
+/xj/waitman/flac/include/FLAC/format.h:533: warning: Member channels (variable) of class FLAC__StreamMetadata_StreamInfo is not documented.
+/xj/waitman/flac/include/FLAC/format.h:534: warning: Member bits_per_sample (variable) of class FLAC__StreamMetadata_StreamInfo is not documented.
+/xj/waitman/flac/include/FLAC/format.h:535: warning: Member total_samples (variable) of class FLAC__StreamMetadata_StreamInfo is not documented.
+/xj/waitman/flac/include/FLAC/format.h:536: warning: Member md5sum[16] (variable) of class FLAC__StreamMetadata_StreamInfo is not documented.
+Generating docs for compound FLAC__StreamMetadata_Unknown...
+/xj/waitman/flac/include/FLAC/format.h:828: warning: Member data (variable) of class FLAC__StreamMetadata_Unknown is not documented.
+Generating docs for compound FLAC__StreamMetadata_VorbisComment...
+/xj/waitman/flac/include/FLAC/format.h:635: warning: Member vendor_string (variable) of class FLAC__StreamMetadata_VorbisComment is not documented.
+/xj/waitman/flac/include/FLAC/format.h:636: warning: Member num_comments (variable) of class FLAC__StreamMetadata_VorbisComment is not documented.
+/xj/waitman/flac/include/FLAC/format.h:637: warning: Member comments (variable) of class FLAC__StreamMetadata_VorbisComment is not documented.
+Generating docs for compound FLAC__StreamMetadata_VorbisComment_Entry...
+/xj/waitman/flac/include/FLAC/format.h:625: warning: Member length (variable) of class FLAC__StreamMetadata_VorbisComment_Entry is not documented.
+/xj/waitman/flac/include/FLAC/format.h:626: warning: Member entry (variable) of class FLAC__StreamMetadata_VorbisComment_Entry is not documented.
+Generating docs for compound FLAC__Subframe...
+/xj/waitman/flac/include/FLAC/format.h:345: warning: Member type (variable) of class FLAC__Subframe is not documented.
+/xj/waitman/flac/include/FLAC/format.h:351: warning: Member data (variable) of class FLAC__Subframe is not documented.
+/xj/waitman/flac/include/FLAC/format.h:352: warning: Member wasted_bits (variable) of class FLAC__Subframe is not documented.
+Generating docs for compound FLAC__Subframe_Constant...
+Generating docs for compound FLAC__Subframe_Fixed...
+Generating docs for compound FLAC__Subframe_LPC...
+Generating docs for compound FLAC__Subframe_Verbatim...
+Generating namespace index...
+Generating docs for compound FLAC::Decoder::File...
+/xj/waitman/flac/include/FLAC++/decoder.h:190: warning: Member read_callback_(const ::FLAC__StreamDecoder *decoder, FLAC__byte buffer[], size_t *bytes, void *client_data) (function) of class FLAC::Decoder::Stream is not documented.
+/xj/waitman/flac/include/FLAC++/decoder.h:191: warning: Member seek_callback_(const ::FLAC__StreamDecoder *decoder, FLAC__uint64 absolute_byte_offset, void *client_data) (function) of class FLAC::Decoder::Stream is not documented.
+/xj/waitman/flac/include/FLAC++/decoder.h:192: warning: Member tell_callback_(const ::FLAC__StreamDecoder *decoder, FLAC__uint64 *absolute_byte_offset, void *client_data) (function) of class FLAC::Decoder::Stream is not documented.
+/xj/waitman/flac/include/FLAC++/decoder.h:193: warning: Member length_callback_(const ::FLAC__StreamDecoder *decoder, FLAC__uint64 *stream_length, void *client_data) (function) of class FLAC::Decoder::Stream is not documented.
+/xj/waitman/flac/include/FLAC++/decoder.h:194: warning: Member eof_callback_(const ::FLAC__StreamDecoder *decoder, void *client_data) (function) of class FLAC::Decoder::Stream is not documented.
+/xj/waitman/flac/include/FLAC++/decoder.h:195: warning: Member write_callback_(const ::FLAC__StreamDecoder *decoder, const ::FLAC__Frame *frame, const FLAC__int32 *const buffer[], void *client_data) (function) of class FLAC::Decoder::Stream is not documented.
+/xj/waitman/flac/include/FLAC++/decoder.h:196: warning: Member metadata_callback_(const ::FLAC__StreamDecoder *decoder, const ::FLAC__StreamMetadata *metadata, void *client_data) (function) of class FLAC::Decoder::Stream is not documented.
+/xj/waitman/flac/include/FLAC++/decoder.h:197: warning: Member error_callback_(const ::FLAC__StreamDecoder *decoder,::FLAC__StreamDecoderErrorStatus status, void *client_data) (function) of class FLAC::Decoder::Stream is not documented.
+/xj/waitman/flac/include/FLAC++/decoder.h:188: warning: Member decoder_ (variable) of class FLAC::Decoder::Stream is not documented.
+Generating docs for compound FLAC::Decoder::Stream...
+/xj/waitman/flac/include/FLAC++/decoder.h:190: warning: Member read_callback_(const ::FLAC__StreamDecoder *decoder, FLAC__byte buffer[], size_t *bytes, void *client_data) (function) of class FLAC::Decoder::Stream is not documented.
+/xj/waitman/flac/include/FLAC++/decoder.h:191: warning: Member seek_callback_(const ::FLAC__StreamDecoder *decoder, FLAC__uint64 absolute_byte_offset, void *client_data) (function) of class FLAC::Decoder::Stream is not documented.
+/xj/waitman/flac/include/FLAC++/decoder.h:192: warning: Member tell_callback_(const ::FLAC__StreamDecoder *decoder, FLAC__uint64 *absolute_byte_offset, void *client_data) (function) of class FLAC::Decoder::Stream is not documented.
+/xj/waitman/flac/include/FLAC++/decoder.h:193: warning: Member length_callback_(const ::FLAC__StreamDecoder *decoder, FLAC__uint64 *stream_length, void *client_data) (function) of class FLAC::Decoder::Stream is not documented.
+/xj/waitman/flac/include/FLAC++/decoder.h:194: warning: Member eof_callback_(const ::FLAC__StreamDecoder *decoder, void *client_data) (function) of class FLAC::Decoder::Stream is not documented.
+/xj/waitman/flac/include/FLAC++/decoder.h:195: warning: Member write_callback_(const ::FLAC__StreamDecoder *decoder, const ::FLAC__Frame *frame, const FLAC__int32 *const buffer[], void *client_data) (function) of class FLAC::Decoder::Stream is not documented.
+/xj/waitman/flac/include/FLAC++/decoder.h:196: warning: Member metadata_callback_(const ::FLAC__StreamDecoder *decoder, const ::FLAC__StreamMetadata *metadata, void *client_data) (function) of class FLAC::Decoder::Stream is not documented.
+/xj/waitman/flac/include/FLAC++/decoder.h:197: warning: Member error_callback_(const ::FLAC__StreamDecoder *decoder,::FLAC__StreamDecoderErrorStatus status, void *client_data) (function) of class FLAC::Decoder::Stream is not documented.
+/xj/waitman/flac/include/FLAC++/decoder.h:188: warning: Member decoder_ (variable) of class FLAC::Decoder::Stream is not documented.
+Generating docs for nested compound FLAC::Decoder::Stream::State...
+/xj/waitman/flac/include/FLAC++/decoder.h:106: warning: Member State(::FLAC__StreamDecoderState state) (function) of class FLAC::Decoder::Stream::State is not documented.
+/xj/waitman/flac/include/FLAC++/decoder.h:107: warning: Member operator::FLAC__StreamDecoderState() const  (function) of class FLAC::Decoder::Stream::State is not documented.
+/xj/waitman/flac/include/FLAC++/decoder.h:108: warning: Member as_cstring() const  (function) of class FLAC::Decoder::Stream::State is not documented.
+/xj/waitman/flac/include/FLAC++/decoder.h:109: warning: Member resolved_as_cstring(const Stream &decoder) const  (function) of class FLAC::Decoder::Stream::State is not documented.
+/xj/waitman/flac/include/FLAC++/decoder.h:111: warning: Member state_ (variable) of class FLAC::Decoder::Stream::State is not documented.
+Generating docs for compound FLAC::Encoder::File...
+/xj/waitman/flac/include/FLAC++/encoder.h:202: warning: Member read_callback_(const ::FLAC__StreamEncoder *encoder, FLAC__byte buffer[], size_t *bytes, void *client_data) (function) of class FLAC::Encoder::Stream is not documented.
+/xj/waitman/flac/include/FLAC++/encoder.h:203: warning: Member write_callback_(const ::FLAC__StreamEncoder *encoder, const FLAC__byte buffer[], size_t bytes, unsigned samples, unsigned current_frame, void *client_data) (function) of class FLAC::Encoder::Stream is not documented.
+/xj/waitman/flac/include/FLAC++/encoder.h:204: warning: Member seek_callback_(const FLAC__StreamEncoder *encoder, FLAC__uint64 absolute_byte_offset, void *client_data) (function) of class FLAC::Encoder::Stream is not documented.
+/xj/waitman/flac/include/FLAC++/encoder.h:205: warning: Member tell_callback_(const FLAC__StreamEncoder *encoder, FLAC__uint64 *absolute_byte_offset, void *client_data) (function) of class FLAC::Encoder::Stream is not documented.
+/xj/waitman/flac/include/FLAC++/encoder.h:206: warning: Member metadata_callback_(const ::FLAC__StreamEncoder *encoder, const ::FLAC__StreamMetadata *metadata, void *client_data) (function) of class FLAC::Encoder::Stream is not documented.
+/xj/waitman/flac/include/FLAC++/encoder.h:200: warning: Member encoder_ (variable) of class FLAC::Encoder::Stream is not documented.
+Generating docs for compound FLAC::Encoder::Stream...
+/xj/waitman/flac/include/FLAC++/encoder.h:202: warning: Member read_callback_(const ::FLAC__StreamEncoder *encoder, FLAC__byte buffer[], size_t *bytes, void *client_data) (function) of class FLAC::Encoder::Stream is not documented.
+/xj/waitman/flac/include/FLAC++/encoder.h:203: warning: Member write_callback_(const ::FLAC__StreamEncoder *encoder, const FLAC__byte buffer[], size_t bytes, unsigned samples, unsigned current_frame, void *client_data) (function) of class FLAC::Encoder::Stream is not documented.
+/xj/waitman/flac/include/FLAC++/encoder.h:204: warning: Member seek_callback_(const FLAC__StreamEncoder *encoder, FLAC__uint64 absolute_byte_offset, void *client_data) (function) of class FLAC::Encoder::Stream is not documented.
+/xj/waitman/flac/include/FLAC++/encoder.h:205: warning: Member tell_callback_(const FLAC__StreamEncoder *encoder, FLAC__uint64 *absolute_byte_offset, void *client_data) (function) of class FLAC::Encoder::Stream is not documented.
+/xj/waitman/flac/include/FLAC++/encoder.h:206: warning: Member metadata_callback_(const ::FLAC__StreamEncoder *encoder, const ::FLAC__StreamMetadata *metadata, void *client_data) (function) of class FLAC::Encoder::Stream is not documented.
+/xj/waitman/flac/include/FLAC++/encoder.h:200: warning: Member encoder_ (variable) of class FLAC::Encoder::Stream is not documented.
+Generating docs for nested compound FLAC::Encoder::Stream::State...
+/xj/waitman/flac/include/FLAC++/encoder.h:108: warning: Member State(::FLAC__StreamEncoderState state) (function) of class FLAC::Encoder::Stream::State is not documented.
+/xj/waitman/flac/include/FLAC++/encoder.h:109: warning: Member operator::FLAC__StreamEncoderState() const  (function) of class FLAC::Encoder::Stream::State is not documented.
+/xj/waitman/flac/include/FLAC++/encoder.h:110: warning: Member as_cstring() const  (function) of class FLAC::Encoder::Stream::State is not documented.
+/xj/waitman/flac/include/FLAC++/encoder.h:111: warning: Member resolved_as_cstring(const Stream &encoder) const  (function) of class FLAC::Encoder::Stream::State is not documented.
+/xj/waitman/flac/include/FLAC++/encoder.h:113: warning: Member state_ (variable) of class FLAC::Encoder::Stream::State is not documented.
+Generating docs for compound FLAC::Metadata::Application...
+/xj/waitman/flac/include/FLAC++/metadata.h:449: warning: Member get_id() const  (function) of class FLAC::Metadata::Application is not documented.
+/xj/waitman/flac/include/FLAC++/metadata.h:450: warning: Member get_data() const  (function) of class FLAC::Metadata::Application is not documented.
+/xj/waitman/flac/include/FLAC++/metadata.h:452: warning: Member set_id(const FLAC__byte value[4]) (function) of class FLAC::Metadata::Application is not documented.
+/xj/waitman/flac/include/FLAC++/metadata.h:455: warning: Member set_data(FLAC__byte *data, unsigned length, bool copy) (function) of class FLAC::Metadata::Application is not documented.
+/xj/waitman/flac/include/FLAC++/metadata.h:148: warning: Member object_ (variable) of class FLAC::Metadata::Prototype is not documented.
+Generating docs for compound FLAC::Metadata::Chain...
+/xj/waitman/flac/include/FLAC++/metadata.h:1179: warning: Member clear() (function) of class FLAC::Metadata::Chain is not documented.
+/xj/waitman/flac/include/FLAC++/metadata.h:1178: warning: Member chain_ (variable) of class FLAC::Metadata::Chain is not documented.
+Generating docs for nested compound FLAC::Metadata::Chain::Status...
+/xj/waitman/flac/include/FLAC++/metadata.h:1149: warning: Member Status(::FLAC__Metadata_ChainStatus status) (function) of class FLAC::Metadata::Chain::Status is not documented.
+/xj/waitman/flac/include/FLAC++/metadata.h:1150: warning: Member operator::FLAC__Metadata_ChainStatus() const  (function) of class FLAC::Metadata::Chain::Status is not documented.
+/xj/waitman/flac/include/FLAC++/metadata.h:1151: warning: Member as_cstring() const  (function) of class FLAC::Metadata::Chain::Status is not documented.
+/xj/waitman/flac/include/FLAC++/metadata.h:1153: warning: Member status_ (variable) of class FLAC::Metadata::Chain::Status is not documented.
+Generating docs for compound FLAC::Metadata::CueSheet...
+/xj/waitman/flac/include/FLAC++/metadata.h:804: warning: Member get_media_catalog_number() const  (function) of class FLAC::Metadata::CueSheet is not documented.
+/xj/waitman/flac/include/FLAC++/metadata.h:805: warning: Member get_lead_in() const  (function) of class FLAC::Metadata::CueSheet is not documented.
+/xj/waitman/flac/include/FLAC++/metadata.h:806: warning: Member get_is_cd() const  (function) of class FLAC::Metadata::CueSheet is not documented.
+/xj/waitman/flac/include/FLAC++/metadata.h:808: warning: Member get_num_tracks() const  (function) of class FLAC::Metadata::CueSheet is not documented.
+/xj/waitman/flac/include/FLAC++/metadata.h:809: warning: Member get_track(unsigned i) const  (function) of class FLAC::Metadata::CueSheet is not documented.
+/xj/waitman/flac/include/FLAC++/metadata.h:811: warning: Member set_media_catalog_number(const char value[128]) (function) of class FLAC::Metadata::CueSheet is not documented.
+/xj/waitman/flac/include/FLAC++/metadata.h:812: warning: Member set_lead_in(FLAC__uint64 value) (function) of class FLAC::Metadata::CueSheet is not documented.
+/xj/waitman/flac/include/FLAC++/metadata.h:813: warning: Member set_is_cd(bool value) (function) of class FLAC::Metadata::CueSheet is not documented.
+/xj/waitman/flac/include/FLAC++/metadata.h:815: warning: Member set_index(unsigned track_num, unsigned index_num, const ::FLAC__StreamMetadata_CueSheet_Index &index) (function) of class FLAC::Metadata::CueSheet is not documented.
+/xj/waitman/flac/include/FLAC++/metadata.h:148: warning: Member object_ (variable) of class FLAC::Metadata::Prototype is not documented.
+Generating docs for nested compound FLAC::Metadata::CueSheet::Track...
+/xj/waitman/flac/include/FLAC++/metadata.h:729: warning: Member Track(const ::FLAC__StreamMetadata_CueSheet_Track *track) (function) of class FLAC::Metadata::CueSheet::Track is not documented.
+/xj/waitman/flac/include/FLAC++/metadata.h:730: warning: Member Track(const Track &track) (function) of class FLAC::Metadata::CueSheet::Track is not documented.
+/xj/waitman/flac/include/FLAC++/metadata.h:731: warning: Member operator=(const Track &track) (function) of class FLAC::Metadata::CueSheet::Track is not documented.
+/xj/waitman/flac/include/FLAC++/metadata.h:738: warning: Member get_offset() const  (function) of class FLAC::Metadata::CueSheet::Track is not documented.
+/xj/waitman/flac/include/FLAC++/metadata.h:739: warning: Member get_number() const  (function) of class FLAC::Metadata::CueSheet::Track is not documented.
+/xj/waitman/flac/include/FLAC++/metadata.h:740: warning: Member get_isrc() const  (function) of class FLAC::Metadata::CueSheet::Track is not documented.
+/xj/waitman/flac/include/FLAC++/metadata.h:741: warning: Member get_type() const  (function) of class FLAC::Metadata::CueSheet::Track is not documented.
+/xj/waitman/flac/include/FLAC++/metadata.h:742: warning: Member get_pre_emphasis() const  (function) of class FLAC::Metadata::CueSheet::Track is not documented.
+/xj/waitman/flac/include/FLAC++/metadata.h:744: warning: Member get_num_indices() const  (function) of class FLAC::Metadata::CueSheet::Track is not documented.
+/xj/waitman/flac/include/FLAC++/metadata.h:745: warning: Member get_index(unsigned i) const  (function) of class FLAC::Metadata::CueSheet::Track is not documented.
+/xj/waitman/flac/include/FLAC++/metadata.h:747: warning: Member get_track() const  (function) of class FLAC::Metadata::CueSheet::Track is not documented.
+/xj/waitman/flac/include/FLAC++/metadata.h:749: warning: Member set_offset(FLAC__uint64 value) (function) of class FLAC::Metadata::CueSheet::Track is not documented.
+/xj/waitman/flac/include/FLAC++/metadata.h:750: warning: Member set_number(FLAC__byte value) (function) of class FLAC::Metadata::CueSheet::Track is not documented.
+/xj/waitman/flac/include/FLAC++/metadata.h:751: warning: Member set_isrc(const char value[12]) (function) of class FLAC::Metadata::CueSheet::Track is not documented.
+/xj/waitman/flac/include/FLAC++/metadata.h:752: warning: Member set_type(unsigned value) (function) of class FLAC::Metadata::CueSheet::Track is not documented.
+/xj/waitman/flac/include/FLAC++/metadata.h:753: warning: Member set_pre_emphasis(bool value) (function) of class FLAC::Metadata::CueSheet::Track is not documented.
+/xj/waitman/flac/include/FLAC++/metadata.h:755: warning: Member set_index(unsigned i, const ::FLAC__StreamMetadata_CueSheet_Index &index) (function) of class FLAC::Metadata::CueSheet::Track is not documented.
+/xj/waitman/flac/include/FLAC++/metadata.h:726: warning: Member object_ (variable) of class FLAC::Metadata::CueSheet::Track is not documented.
+Generating docs for compound FLAC::Metadata::Iterator...
+/xj/waitman/flac/include/FLAC++/metadata.h:1213: warning: Member clear() (function) of class FLAC::Metadata::Iterator is not documented.
+/xj/waitman/flac/include/FLAC++/metadata.h:1212: warning: Member iterator_ (variable) of class FLAC::Metadata::Iterator is not documented.
+Generating docs for compound FLAC::Metadata::Padding...
+/xj/waitman/flac/include/FLAC++/metadata.h:148: warning: Member object_ (variable) of class FLAC::Metadata::Prototype is not documented.
+Generating docs for compound FLAC::Metadata::Picture...
+/xj/waitman/flac/include/FLAC++/metadata.h:901: warning: Member get_type() const  (function) of class FLAC::Metadata::Picture is not documented.
+/xj/waitman/flac/include/FLAC++/metadata.h:902: warning: Member get_mime_type() const  (function) of class FLAC::Metadata::Picture is not documented.
+/xj/waitman/flac/include/FLAC++/metadata.h:903: warning: Member get_description() const  (function) of class FLAC::Metadata::Picture is not documented.
+/xj/waitman/flac/include/FLAC++/metadata.h:904: warning: Member get_width() const  (function) of class FLAC::Metadata::Picture is not documented.
+/xj/waitman/flac/include/FLAC++/metadata.h:905: warning: Member get_height() const  (function) of class FLAC::Metadata::Picture is not documented.
+/xj/waitman/flac/include/FLAC++/metadata.h:906: warning: Member get_depth() const  (function) of class FLAC::Metadata::Picture is not documented.
+/xj/waitman/flac/include/FLAC++/metadata.h:908: warning: Member get_data_length() const  (function) of class FLAC::Metadata::Picture is not documented.
+/xj/waitman/flac/include/FLAC++/metadata.h:909: warning: Member get_data() const  (function) of class FLAC::Metadata::Picture is not documented.
+/xj/waitman/flac/include/FLAC++/metadata.h:911: warning: Member set_type(::FLAC__StreamMetadata_Picture_Type type) (function) of class FLAC::Metadata::Picture is not documented.
+/xj/waitman/flac/include/FLAC++/metadata.h:919: warning: Member set_width(FLAC__uint32 value) const  (function) of class FLAC::Metadata::Picture is not documented.
+/xj/waitman/flac/include/FLAC++/metadata.h:920: warning: Member set_height(FLAC__uint32 value) const  (function) of class FLAC::Metadata::Picture is not documented.
+/xj/waitman/flac/include/FLAC++/metadata.h:921: warning: Member set_depth(FLAC__uint32 value) const  (function) of class FLAC::Metadata::Picture is not documented.
+/xj/waitman/flac/include/FLAC++/metadata.h:148: warning: Member object_ (variable) of class FLAC::Metadata::Prototype is not documented.
+Generating docs for compound FLAC::Metadata::Prototype...
+/xj/waitman/flac/include/FLAC++/metadata.h:116: warning: Member Prototype(const ::FLAC__StreamMetadata &) (function) of class FLAC::Metadata::Prototype is not documented.
+/xj/waitman/flac/include/FLAC++/metadata.h:117: warning: Member Prototype(const ::FLAC__StreamMetadata *) (function) of class FLAC::Metadata::Prototype is not documented.
+/xj/waitman/flac/include/FLAC++/metadata.h:148: warning: Member object_ (variable) of class FLAC::Metadata::Prototype is not documented.
+Generating docs for compound FLAC::Metadata::SeekTable...
+/xj/waitman/flac/include/FLAC++/metadata.h:508: warning: Member get_num_points() const  (function) of class FLAC::Metadata::SeekTable is not documented.
+/xj/waitman/flac/include/FLAC++/metadata.h:509: warning: Member get_point(unsigned index) const  (function) of class FLAC::Metadata::SeekTable is not documented.
+/xj/waitman/flac/include/FLAC++/metadata.h:148: warning: Member object_ (variable) of class FLAC::Metadata::Prototype is not documented.
+Generating docs for compound FLAC::Metadata::SimpleIterator...
+/xj/waitman/flac/include/FLAC++/metadata.h:1091: warning: Member clear() (function) of class FLAC::Metadata::SimpleIterator is not documented.
+/xj/waitman/flac/include/FLAC++/metadata.h:1090: warning: Member iterator_ (variable) of class FLAC::Metadata::SimpleIterator is not documented.
+Generating docs for nested compound FLAC::Metadata::SimpleIterator::Status...
+/xj/waitman/flac/include/FLAC++/metadata.h:1059: warning: Member Status(::FLAC__Metadata_SimpleIteratorStatus status) (function) of class FLAC::Metadata::SimpleIterator::Status is not documented.
+/xj/waitman/flac/include/FLAC++/metadata.h:1060: warning: Member operator::FLAC__Metadata_SimpleIteratorStatus() const  (function) of class FLAC::Metadata::SimpleIterator::Status is not documented.
+/xj/waitman/flac/include/FLAC++/metadata.h:1061: warning: Member as_cstring() const  (function) of class FLAC::Metadata::SimpleIterator::Status is not documented.
+/xj/waitman/flac/include/FLAC++/metadata.h:1063: warning: Member status_ (variable) of class FLAC::Metadata::SimpleIterator::Status is not documented.
+Generating docs for compound FLAC::Metadata::StreamInfo...
+/xj/waitman/flac/include/FLAC++/metadata.h:148: warning: Member object_ (variable) of class FLAC::Metadata::Prototype is not documented.
+Generating docs for compound FLAC::Metadata::Unknown...
+/xj/waitman/flac/include/FLAC++/metadata.h:983: warning: Member get_data() const  (function) of class FLAC::Metadata::Unknown is not documented.
+/xj/waitman/flac/include/FLAC++/metadata.h:987: warning: Member set_data(FLAC__byte *data, unsigned length, bool copy) (function) of class FLAC::Metadata::Unknown is not documented.
+/xj/waitman/flac/include/FLAC++/metadata.h:148: warning: Member object_ (variable) of class FLAC::Metadata::Prototype is not documented.
+Generating docs for compound FLAC::Metadata::VorbisComment...
+/xj/waitman/flac/include/FLAC++/metadata.h:677: warning: Member get_num_comments() const  (function) of class FLAC::Metadata::VorbisComment is not documented.
+/xj/waitman/flac/include/FLAC++/metadata.h:678: warning: Member get_vendor_string() const  (function) of class FLAC::Metadata::VorbisComment is not documented.
+/xj/waitman/flac/include/FLAC++/metadata.h:679: warning: Member get_comment(unsigned index) const  (function) of class FLAC::Metadata::VorbisComment is not documented.
+/xj/waitman/flac/include/FLAC++/metadata.h:148: warning: Member object_ (variable) of class FLAC::Metadata::Prototype is not documented.
+Generating docs for nested compound FLAC::Metadata::VorbisComment::Entry...
+/xj/waitman/flac/include/FLAC++/metadata.h:584: warning: Member Entry(const char *field, unsigned field_length) (function) of class FLAC::Metadata::VorbisComment::Entry is not documented.
+/xj/waitman/flac/include/FLAC++/metadata.h:585: warning: Member Entry(const char *field) (function) of class FLAC::Metadata::VorbisComment::Entry is not documented.
+/xj/waitman/flac/include/FLAC++/metadata.h:587: warning: Member Entry(const char *field_name, const char *field_value, unsigned field_value_length) (function) of class FLAC::Metadata::VorbisComment::Entry is not documented.
+/xj/waitman/flac/include/FLAC++/metadata.h:588: warning: Member Entry(const char *field_name, const char *field_value) (function) of class FLAC::Metadata::VorbisComment::Entry is not documented.
+/xj/waitman/flac/include/FLAC++/metadata.h:590: warning: Member Entry(const Entry &entry) (function) of class FLAC::Metadata::VorbisComment::Entry is not documented.
+/xj/waitman/flac/include/FLAC++/metadata.h:592: warning: Member operator=(const Entry &entry) (function) of class FLAC::Metadata::VorbisComment::Entry is not documented.
+/xj/waitman/flac/include/FLAC++/metadata.h:598: warning: Member get_field_length() const  (function) of class FLAC::Metadata::VorbisComment::Entry is not documented.
+/xj/waitman/flac/include/FLAC++/metadata.h:599: warning: Member get_field_name_length() const  (function) of class FLAC::Metadata::VorbisComment::Entry is not documented.
+/xj/waitman/flac/include/FLAC++/metadata.h:600: warning: Member get_field_value_length() const  (function) of class FLAC::Metadata::VorbisComment::Entry is not documented.
+/xj/waitman/flac/include/FLAC++/metadata.h:602: warning: Member get_entry() const  (function) of class FLAC::Metadata::VorbisComment::Entry is not documented.
+/xj/waitman/flac/include/FLAC++/metadata.h:603: warning: Member get_field() const  (function) of class FLAC::Metadata::VorbisComment::Entry is not documented.
+/xj/waitman/flac/include/FLAC++/metadata.h:604: warning: Member get_field_name() const  (function) of class FLAC::Metadata::VorbisComment::Entry is not documented.
+/xj/waitman/flac/include/FLAC++/metadata.h:605: warning: Member get_field_value() const  (function) of class FLAC::Metadata::VorbisComment::Entry is not documented.
+/xj/waitman/flac/include/FLAC++/metadata.h:607: warning: Member set_field(const char *field, unsigned field_length) (function) of class FLAC::Metadata::VorbisComment::Entry is not documented.
+/xj/waitman/flac/include/FLAC++/metadata.h:608: warning: Member set_field(const char *field) (function) of class FLAC::Metadata::VorbisComment::Entry is not documented.
+/xj/waitman/flac/include/FLAC++/metadata.h:609: warning: Member set_field_name(const char *field_name) (function) of class FLAC::Metadata::VorbisComment::Entry is not documented.
+/xj/waitman/flac/include/FLAC++/metadata.h:610: warning: Member set_field_value(const char *field_value, unsigned field_value_length) (function) of class FLAC::Metadata::VorbisComment::Entry is not documented.
+/xj/waitman/flac/include/FLAC++/metadata.h:611: warning: Member set_field_value(const char *field_value) (function) of class FLAC::Metadata::VorbisComment::Entry is not documented.
+/xj/waitman/flac/include/FLAC++/metadata.h:613: warning: Member is_valid_ (variable) of class FLAC::Metadata::VorbisComment::Entry is not documented.
+/xj/waitman/flac/include/FLAC++/metadata.h:614: warning: Member entry_ (variable) of class FLAC::Metadata::VorbisComment::Entry is not documented.
+/xj/waitman/flac/include/FLAC++/metadata.h:615: warning: Member field_name_ (variable) of class FLAC::Metadata::VorbisComment::Entry is not documented.
+/xj/waitman/flac/include/FLAC++/metadata.h:616: warning: Member field_name_length_ (variable) of class FLAC::Metadata::VorbisComment::Entry is not documented.
+/xj/waitman/flac/include/FLAC++/metadata.h:617: warning: Member field_value_ (variable) of class FLAC::Metadata::VorbisComment::Entry is not documented.
+/xj/waitman/flac/include/FLAC++/metadata.h:618: warning: Member field_value_length_ (variable) of class FLAC::Metadata::VorbisComment::Entry is not documented.
+Generating graph info page...
+Generating directory documentation...
+Generating index page...
+/xj/waitman/flac/include/FLAC/all.h:152: warning: explicit link request to 'define' could not be resolved
+Generating page index...
+Generating module index...
+/xj/waitman/flac/include/FLAC/export.h:48: warning: explicit link request to 'defines' could not be resolved
+/xj/waitman/flac/include/FLAC++/export.h:48: warning: explicit link request to 'defines' could not be resolved
+Generating namespace index...
+Generating namespace member index...
+Generating annotated compound index...
+Generating alphabetical compound index...
+Generating hierarchical class index...
+Generating member index...
+Generating file index...
+/xj/waitman/flac/include/FLAC/export.h:38: warning: explicit link request to 'defines' could not be resolved
+/xj/waitman/flac/include/FLAC++/export.h:38: warning: explicit link request to 'defines' could not be resolved
+Generating file member index...
+Generating example index...
+finalizing index lists...
+lookup cache used 1788/65536 hits=12089 misses=1852
+finished...
+rm -rf html/api
+mv doxytmp/html html/api
+rm -rf doxytmp
+Making all in html
+Making all in images
+Making all in include
+Making all in FLAC
+Making all in FLAC++
+Making all in share
+Making all in grabbag
+Making all in test_libs_common
+Making all in m4
+Making all in man
+Making all in src
+Making all in share
+  CC       getopt/getopt.lo
+  CC       getopt/getopt1.lo
+  CCLD     getopt/libgetopt.la
+  CC       grabbag/alloc.lo
+  CC       grabbag/cuesheet.lo
+  CC       grabbag/file.lo
+  CC       grabbag/picture.lo
+  CC       grabbag/replaygain.lo
+  CC       grabbag/seektable.lo
+  CC       grabbag/snprintf.lo
+  CCLD     grabbag/libgrabbag.la
+  CC       utf8/charset.lo
+  CC       utf8/iconvert.lo
+[1mutf8/iconvert.c:115:20: [0m[0;1;35mwarning: [0m[1mpassing 'char **' to parameter of type 'const char **' discards qualifiers in nested pointer types [-Wincompatible-pointer-types-discards-qualifiers][0m
+    k = iconv(cd1, &ib, &ibl, &ob, &obl);
+[0;1;32m                   ^~~
+[0m[1m/usr/include/iconv.h:56:47: [0m[0;1;30mnote: [0mpassing argument to parameter here[0m
+size_t  iconv(iconv_t, const char ** __restrict,
+[0;1;32m                                               ^
+[0m[1mutf8/iconvert.c:176:20: [0m[0;1;35mwarning: [0m[1mpassing 'char **' to parameter of type 'const char **' discards qualifiers in nested pointer types [-Wincompatible-pointer-types-discards-qualifiers][0m
+    k = iconv(cd2, &ib, &ibl, &ob, &obl);
+[0;1;32m                   ^~~
+[0m[1m/usr/include/iconv.h:56:47: [0m[0;1;30mnote: [0mpassing argument to parameter here[0m
+size_t  iconv(iconv_t, const char ** __restrict,
+[0;1;32m                                               ^
+[0m[1mutf8/iconvert.c:188:22: [0m[0;1;35mwarning: [0m[1mpassing 'char **' to parameter of type 'const char **' discards qualifiers in nested pointer types [-Wincompatible-pointer-types-discards-qualifiers][0m
+      k = iconv(cd2, &tb, &tbl, &ob, &obl);
+[0;1;32m                     ^~~
+[0m[1m/usr/include/iconv.h:56:47: [0m[0;1;30mnote: [0mpassing argument to parameter here[0m
+size_t  iconv(iconv_t, const char ** __restrict,
+[0;1;32m                                               ^
+[0m[1mutf8/iconvert.c:211:20: [0m[0;1;35mwarning: [0m[1mpassing 'char **' to parameter of type 'const char **' discards qualifiers in nested pointer types [-Wincompatible-pointer-types-discards-qualifiers][0m
+    k = iconv(cd2, &ib, &ibl, &ob, &obl);
+[0;1;32m                   ^~~
+[0m[1m/usr/include/iconv.h:56:47: [0m[0;1;30mnote: [0mpassing argument to parameter here[0m
+size_t  iconv(iconv_t, const char ** __restrict,
+[0;1;32m                                               ^
+[0m[1mutf8/iconvert.c:221:22: [0m[0;1;35mwarning: [0m[1mpassing 'char **' to parameter of type 'const char **' discards qualifiers in nested pointer types [-Wincompatible-pointer-types-discards-qualifiers][0m
+      k = iconv(cd2, &tb, &tbl, &ob, &obl);
+[0;1;32m                     ^~~
+[0m[1m/usr/include/iconv.h:56:47: [0m[0;1;30mnote: [0mpassing argument to parameter here[0m
+size_t  iconv(iconv_t, const char ** __restrict,
+[0;1;32m                                               ^
+[0m5 warnings generated.
+  CC       utf8/utf8.lo
+  CCLD     utf8/libutf8.la
+  CC       replaygain_analysis/replaygain_analysis.lo
+  CCLD     replaygain_analysis/libreplaygain_analysis.la
+  CC       replaygain_synthesis/replaygain_synthesis_libreplaygain_synthesis_la-replaygain_synthesis.lo
+  CCLD     replaygain_synthesis/libreplaygain_synthesis.la
+  CC       json-c/libjson.lo
+  CCLD     json-c/libjson.la
+Making all in libFLAC
+Making all in include
+Making all in private
+Making all in protected
+Making all in .
+  CC       bitmath.lo
+  CC       bitreader.lo
+  CC       bitwriter.lo
+  CC       cpu.lo
+  CC       crc.lo
+  CC       fixed.lo
+  CC       fixed_intrin_sse2.lo
+  CC       fixed_intrin_ssse3.lo
+  CC       float.lo
+  CC       format.lo
+  CC       lpc.lo
+  CC       lpc_intrin_sse.lo
+  CC       lpc_intrin_sse2.lo
+  CC       lpc_intrin_sse41.lo
+  CC       lpc_intrin_avx2.lo
+  CC       md5.lo
+  CC       memory.lo
+  CC       metadata_iterators.lo
+  CC       metadata_object.lo
+  CC       stream_decoder.lo
+  CC       stream_encoder.lo
+  CC       stream_encoder_intrin_sse2.lo
+  CC       stream_encoder_intrin_ssse3.lo
+  CC       stream_encoder_intrin_avx2.lo
+  CC       stream_encoder_framing.lo
+  CC       window.lo
+  CCLD     libFLAC.la
+  CCLD     libFLAC-static.la
+Making all in flac
+  CC       analyze.o
+  CC       decode.o
+  CC       encode.o
+  CC       foreign_metadata.o
+  CC       main.o
+  CC       local_string_utils.o
+  CC       utils.o
+  CC       vorbiscomment.o
+  CCLD     flac
+Making all in metaflac
+  CC       main.o
+  CC       operations.o
+  CC       operations_shorthand_cuesheet.o
+  CC       operations_shorthand_picture.o
+  CC       operations_shorthand_seektable.o
+  CC       operations_shorthand_streaminfo.o
+  CC       operations_shorthand_vorbiscomment.o
+  CC       options.o
+  CC       usage.o
+  CC       utils.o
+  CCLD     metaflac
+Making all in test_grabbag
+Making all in cuesheet
+  CC       main.o
+  CCLD     test_cuesheet
+Making all in picture
+  CC       main.o
+  CCLD     test_picture
+Making all in test_libs_common
+  CC       file_utils_flac.lo
+  CC       metadata_utils.lo
+  CCLD     libtest_libs_common.la
+Making all in test_libFLAC
+  CC       bitwriter.o
+  CC       decoders.o
+  CC       encoders.o
+  CC       endswap.o
+  CC       format.o
+  CC       main.o
+  CC       metadata.o
+  CC       metadata_manip.o
+  CC       metadata_object.o
+  CC       md5.o
+  CCLD     test_libFLAC
+Making all in test_seeking
+  CC       main.o
+  CCLD     test_seeking
+Making all in test_streams
+  CC       main.o
+  CCLD     test_streams
+Making all in utils
+Making all in flacdiff
+Making all in flactimer
+Making all in libFLAC++
+  CXX      metadata.lo
+  CXX      stream_decoder.lo
+  CXX      stream_encoder.lo
+  CXXLD    libFLAC++.la
+Making all in test_libFLAC++
+  CXX      decoders.o
+  CXX      encoders.o
+  CXX      main.o
+  CXX      metadata.o
+  CXX      metadata_manip.o
+  CXX      metadata_object.o
+  CXXLD    test_libFLAC++
+Making all in examples
+Making all in c
+Making all in decode
+Making all in file
+  CC       main.o
+  CCLD     example_c_decode_file
+Making all in encode
+Making all in file
+  CC       main.o
+  CCLD     example_c_encode_file
+Making all in cpp
+Making all in decode
+Making all in file
+  CXX      main.o
+  CXXLD    example_cpp_decode_file
+Making all in encode
+Making all in file
+  CXX      main.o
+  CXXLD    example_cpp_encode_file
+Making all in test
+Making all in cuesheets
+Making all in flac-to-flac-metadata-test-files
+Making all in metaflac-test-files
+Making all in pictures
+Making all in build
+Making all in objs
+Making all in debug
+Making all in bin
+Making all in lib
+Making all in release
+Making all in bin
+Making all in lib
+waitman@afia:~/flac % exit
+exit
+
+Script done on Sun Nov 30 08:38:40 2014

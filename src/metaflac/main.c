@@ -25,6 +25,7 @@
 #include "options.h"
 #include <locale.h>
 #include <stdlib.h>
+#include <stdio.h>
 #include "share/compat.h"
 
 int main(int argc, char *argv[])
@@ -63,6 +64,7 @@ int main(int argc, char *argv[])
 		ret = !do_operations(&options);
 	else
 		ret = 1;
+
 
 	free_options(&options);
 

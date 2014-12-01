@@ -50,7 +50,8 @@ EXTRA_DIST = \
 	utf8/utf8_static.vcxproj.filters \
 	win_utf8_io/win_utf8_io_static.vcproj \
 	win_utf8_io/win_utf8_io_static.vcxproj \
-	win_utf8_io/win_utf8_io_static.vcxproj.filters
+	win_utf8_io/win_utf8_io_static.vcxproj.filters \
+	json-c/Makefile.lite 
 
 
 noinst_LTLIBRARIES = \
@@ -59,7 +60,8 @@ noinst_LTLIBRARIES = \
 	utf8/libutf8.la \
 	$(libwin_utf8_io) \
 	replaygain_analysis/libreplaygain_analysis.la \
-	replaygain_synthesis/libreplaygain_synthesis.la
+	replaygain_synthesis/libreplaygain_synthesis.la \
+	json-c/libjson.la
 
 
 if OS_IS_WINDOWS
@@ -87,6 +89,18 @@ utf8_libutf8_la_SOURCES = \
 	utf8/charset.h \
 	utf8/iconvert.c \
 	utf8/utf8.c
+
+jsonc_libjsonc_la_SOURCES = \
+	json-c/arraylist.c \
+	json-c/debug.c \
+	json-c/json_c_version.c \
+	json-c/json_object.c \
+	json-c/json_object_iterator.c \
+	json-c/json_util.c \
+	json-c/linkhash.c \
+	json-c/printbuf.c \
+	json-c/random_seed.c \
+	json-c/libjson.c
 
 replaygain_analysis_libreplaygain_analysis_la_SOURCES = replaygain_analysis/replaygain_analysis.c
 

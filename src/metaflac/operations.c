@@ -33,6 +33,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include "operations_shorthand.h"
+#include "share/json-c/json.h"
 
 static void show_version(void);
 static FLAC__bool do_major_operation(const CommandLineOptions *options);
@@ -49,6 +50,7 @@ static FLAC__bool do_shorthand_operation__add_padding(const char *filename, FLAC
 
 static FLAC__bool passes_filter(const CommandLineOptions *options, const FLAC__StreamMetadata *block, unsigned block_number);
 static void write_metadata(const char *filename, FLAC__StreamMetadata *block, unsigned block_number, FLAC__bool raw, FLAC__bool hexdump_application);
+static json_object * write_metadata_json(FLAC__StreamMetadata *block, unsigned block_number); /* mod wcg */
 
 /* from operations_shorthand_seektable.c */
 extern FLAC__bool do_shorthand_operation__add_seekpoints(const char *filename, FLAC__Metadata_Chain *chain, const char *specification, FLAC__bool *needs_write);
@@ -173,29 +175,55 @@ FLAC__bool do_major_operation_on_file(const char *filename, const CommandLineOpt
 
 FLAC__bool do_major_operation__list(const char *filename, FLAC__Metadata_Chain *chain, const CommandLineOptions *options)
 {
-	FLAC__Metadata_Iterator *iterator = FLAC__metadata_iterator_new();
+  
+  	FLAC__Metadata_Iterator *iterator = FLAC__metadata_iterator_new();
 	FLAC__StreamMetadata *block;
 	FLAC__bool ok = true;
 	unsigned block_number;
+	json_object *flac_out_json, *jsobj, *jblock_id, *jblock_object;
+	
 
+	
 	if(0 == iterator)
 		die("out of memory allocating iterator");
 
 	FLAC__metadata_iterator_init(iterator, chain);
 
+	if (options->output_json) {
+	  flac_out_json = json_object_new_array();
+	}
+	
 	block_number = 0;
 	do {
 		block = FLAC__metadata_iterator_get_block(iterator);
 		ok &= (0 != block);
 		if(!ok)
+		{
 			flac_fprintf(stderr, "%s: ERROR: couldn't get block from chain\n", filename);
-		else if(passes_filter(options, FLAC__metadata_iterator_get_block(iterator), block_number))
+		} else if(passes_filter(options, FLAC__metadata_iterator_get_block(iterator), block_number))
+		{
+		   if (!options->output_json) {
 			write_metadata(filename, block, block_number, !options->utf8_convert, options->application_data_format_is_hexdump);
+		   } else {
+			/* mod wcg */
+			jblock_id = json_object_new_int(block_number);
+			jblock_object = json_object_new_object();
+			json_object_object_add(jblock_object,"Block ID",jblock_id);
+			jsobj = write_metadata_json(block, block_number);
+			json_object_object_add(jblock_object,"Block",jsobj); 
+			json_object_array_add(flac_out_json,jblock_object);
+	
+		   }
+		}
 		block_number++;
 	} while(ok && FLAC__metadata_iterator_next(iterator));
 
 	FLAC__metadata_iterator_delete(iterator);
 
+	if (options->output_json) 
+	  printf("%s",json_object_to_json_string(flac_out_json));
+	
+	
 	return ok;
 }
 
@@ -661,4 +689,217 @@ void write_metadata(const char *filename, FLAC__StreamMetadata *block, unsigned 
 			break;
 	}
 #undef PPR
+}
+
+
+/* mod wcg 
+ NO PPR here, raw output not an option with --output-json
+ remove FLAC__bool raw, FLAC__bool hexdump_application
+ */
+
+json_object * write_metadata_json(FLAC__StreamMetadata *block, unsigned block_number)
+{
+	unsigned i, j;
+	FLAC__bool raw = false;
+	FLAC__bool hexdump_application = false;
+	
+	char hbuf[64] = {0};
+	  
+	json_object * jobj = json_object_new_object();
+	
+	json_object *jmin_blocksize, *jmax_blocksize, *jmin_framesize, *jmax_framesize, *jsample_rate, 
+		    *jchannels, *jbps, *jtotal_samples, *jmd5, *jcomments_array, *jcomment, *jvendor,
+		    *jcomments_number, *japplication_id, *japplication_data, *jseek_points, *jpoints, *jpoint, *jsample,
+		    *jpoint_number, *jsample_number, *jstream_offset, *jframe_samples, *jpicture_type, *jmime_type, 
+		    *jdescription, *jwidth, *jheight, *jdepth, *jcolors, *jdata_length, *jdata;
+
+	json_object *jblock_number = json_object_new_int(block_number);
+	json_object *jblock_type = json_object_new_int(block->type);
+	json_object *jblock_length = json_object_new_int(block->length);
+	json_object *jblock_last = json_object_new_boolean(block->is_last);
+	
+	json_object_object_add(jobj,"Block Number", jblock_number);
+	json_object_object_add(jobj,"Block Type", jblock_type);
+	json_object_object_add(jobj,"Block Length", jblock_length);
+	json_object_object_add(jobj,"Is Last", jblock_last);
+
+	
+/*	
+	 printf("JSON METADATA block #%u\n", block_number);
+	 printf("  type: %u (%s)\n", (unsigned)block->type, block->type < FLAC__METADATA_TYPE_UNDEFINED? FLAC__MetadataTypeString[block->type] : "UNKNOWN");
+	 printf("  is last: %s\n", block->is_last? "true":"false");
+	 printf("  length: %u\n", block->length);
+*/
+	switch(block->type) {
+		case FLAC__METADATA_TYPE_STREAMINFO:
+			 
+			  jmin_blocksize = json_object_new_int(block->data.stream_info.min_blocksize);
+			  jmax_blocksize = json_object_new_int(block->data.stream_info.max_blocksize);
+			  jmin_framesize = json_object_new_int(block->data.stream_info.min_framesize);
+			  jmax_framesize = json_object_new_int(block->data.stream_info.max_framesize);
+			  jsample_rate = json_object_new_int(block->data.stream_info.sample_rate);
+			  jchannels = json_object_new_int(block->data.stream_info.channels);
+			  jbps = json_object_new_int(block->data.stream_info.bits_per_sample);
+			  jtotal_samples = json_object_new_int(block->data.stream_info.total_samples);
+			
+			  for(i = 0; i < 16; i++) {
+			  	sprintf(hbuf+strlen(hbuf),"%02x", (unsigned)block->data.stream_info.md5sum[i]);
+			  }
+			  jmd5 = json_object_new_string(hbuf);
+			  
+			  json_object_object_add(jobj,"Min Blocksize",jmin_blocksize);
+			  json_object_object_add(jobj,"Max Blocksize",jmax_blocksize);
+			  json_object_object_add(jobj,"Min Framesize",jmin_framesize);
+			  json_object_object_add(jobj,"Max Framesize",jmax_framesize);
+			  json_object_object_add(jobj,"Sample Rate",jsample_rate);
+			  json_object_object_add(jobj,"Channels",jchannels);
+			  json_object_object_add(jobj,"Bits Per Sample",jbps);
+			  json_object_object_add(jobj,"Total Samples",jtotal_samples);
+			  json_object_object_add(jobj,"MD5 Signature",jmd5);
+						 
+
+			  
+/*			 printf("  minimum blocksize: %u samples\n", block->data.stream_info.min_blocksize);
+			 printf("  maximum blocksize: %u samples\n", block->data.stream_info.max_blocksize);
+			 printf("  minimum framesize: %u bytes\n", block->data.stream_info.min_framesize);
+			 printf("  maximum framesize: %u bytes\n", block->data.stream_info.max_framesize);
+			 printf("  sample_rate: %u Hz\n", block->data.stream_info.sample_rate);
+			 printf("  channels: %u\n", block->data.stream_info.channels);
+			 printf("  bits-per-sample: %u\n", block->data.stream_info.bits_per_sample);
+			 printf("  total samples: %" PRIu64 "\n", block->data.stream_info.total_samples);
+			 printf("  MD5 signature: "); 
+			 */
+
+			//printf("\n");
+			break;
+		case FLAC__METADATA_TYPE_PADDING:
+			/* nothing to print */
+			break;
+		case FLAC__METADATA_TYPE_APPLICATION:
+
+			for(i = 0; i < 4; i++)
+				sprintf(hbuf+strlen(hbuf),"%02x", block->data.application.id[i]);
+			
+			japplication_id = json_object_new_string(hbuf);
+			
+			if(0 != block->data.application.data) {
+			  japplication_data = json_object_new_string(block->data.application.data);
+			}
+			json_object_object_add(jobj,"Application ID", japplication_id);
+			json_object_object_add(jobj,"Application Data", japplication_data);
+			
+			break;
+		case FLAC__METADATA_TYPE_SEEKTABLE:
+			 jseek_points = json_object_new_int(block->data.seek_table.num_points);
+			 jpoints = json_object_new_array();
+			 
+			for(i = 0; i < block->data.seek_table.num_points; i++) {
+			  
+			      jpoint = json_object_new_object();
+				if(block->data.seek_table.points[i].sample_number != FLAC__STREAM_METADATA_SEEKPOINT_PLACEHOLDER) {
+				  jpoint_number = json_object_new_int(i);
+				  jsample_number = json_object_new_int(block->data.seek_table.points[i].sample_number);
+				  jstream_offset = json_object_new_int(block->data.seek_table.points[i].stream_offset);
+				  jframe_samples = json_object_new_int(block->data.seek_table.points[i].frame_samples);
+				  json_object_object_add(jpoint,"Point Number",jpoint_number);
+				  json_object_object_add(jpoint,"Sample Number",jsample_number);
+				  json_object_object_add(jpoint,"Stream Offset",jstream_offset);
+				  json_object_object_add(jpoint,"Frame Samples",jframe_samples);
+				}
+				else {
+				  jpoint_number = json_object_new_int(i);
+				  json_object_object_add(jpoint,"Point Number",jpoint_number);
+				}
+				json_object_array_add(jpoints,jpoint);
+			}
+			json_object_object_add(jobj,"Seek Points", jseek_points);
+			json_object_object_add(jobj,"Seek Data",jpoints);
+			break;
+		case FLAC__METADATA_TYPE_VORBIS_COMMENT:
+			jvendor = json_object_new_string(block->data.vorbis_comment.vendor_string.entry);
+			jcomments_number = json_object_new_int(block->data.vorbis_comment.num_comments);
+			jcomments_array = json_object_new_array();
+			for(i = 0; i < block->data.vorbis_comment.num_comments; i++) {
+				jcomment = json_object_new_string(block->data.vorbis_comment.comments[i].entry);
+				json_object_array_add(jcomments_array,jcomment);
+			}
+			json_object_object_add(jobj,"Vendor String",jvendor);
+			json_object_object_add(jobj,"Number of Comments",jcomments_number);
+			json_object_object_add(jobj,"Comments",jcomments_array);
+			
+			break;
+		case FLAC__METADATA_TYPE_CUESHEET:
+		  /*
+			 printf("  media catalog number: %s\n", block->data.cue_sheet.media_catalog_number);
+			 printf("  lead-in: %" PRIu64 "\n", block->data.cue_sheet.lead_in);
+			 printf("  is CD: %s\n", block->data.cue_sheet.is_cd? "true":"false");
+			 printf("  number of tracks: %u\n", block->data.cue_sheet.num_tracks);
+			for(i = 0; i < block->data.cue_sheet.num_tracks; i++) {
+				const FLAC__StreamMetadata_CueSheet_Track *track = block->data.cue_sheet.tracks+i;
+				const FLAC__bool is_last = (i == block->data.cue_sheet.num_tracks-1);
+				const FLAC__bool is_leadout = is_last && track->num_indices == 0;
+				 printf("    track[%u]\n", i);
+				 printf("      offset: %" PRIu64 "\n", track->offset);
+				if(is_last) {
+					 printf("      number: %u (%s)\n", (unsigned)track->number, is_leadout? "LEAD-OUT" : "INVALID");
+				}
+				else {
+					 printf("      number: %u\n", (unsigned)track->number);
+				}
+				if(!is_leadout) {
+					 printf("      ISRC: %s\n", track->isrc);
+					 printf("      type: %s\n", track->type == 1? "DATA" : "AUDIO");
+					 printf("      pre-emphasis: %s\n", track->pre_emphasis? "true":"false");
+					 printf("      number of index points: %u\n", track->num_indices);
+					for(j = 0; j < track->num_indices; j++) {
+						const FLAC__StreamMetadata_CueSheet_Index *indx = track->indices+j;
+						 printf("        index[%u]\n", j);
+						 printf("          offset: %" PRIu64 "\n", indx->offset);
+						 printf("          number: %u\n", (unsigned)indx->number);
+					}
+				}
+			}
+			LATER wcg */
+			break;
+		case FLAC__METADATA_TYPE_PICTURE:
+			 jpicture_type = json_object_new_int(block->data.picture.type);
+			 jmime_type = json_object_new_string(block->data.picture.mime_type);
+			 jdescription = json_object_new_string(block->data.picture.description);
+			 jwidth = json_object_new_int(block->data.picture.width);
+			 jheight = json_object_new_int(block->data.picture.height);
+			 jdepth = json_object_new_int(block->data.picture.depth);
+			 jcolors = json_object_new_int(block->data.picture.colors);
+			 jdata_length = json_object_new_int(block->data.picture.data_length);
+			 
+			 json_object_object_add(jobj,"Picture Type",jpicture_type);
+			 json_object_object_add(jobj,"MIME Type",jmime_type);
+			 json_object_object_add(jobj,"Description",jdescription);
+			 json_object_object_add(jobj,"Width",jwidth);
+			 json_object_object_add(jobj,"Height",jheight);
+			 json_object_object_add(jobj,"Depth",jdepth);
+			 json_object_object_add(jobj,"Colors",jcolors);
+			 json_object_object_add(jobj,"Data Length",jdata_length);
+			 
+			 
+			 if(0 != block->data.picture.data)
+			 {
+			  char * image_buffer = (char*) malloc ((block->data.picture.data_length*2)+1);
+			  for (int i=0;i<block->data.picture.data_length;i++) {
+			     sprintf(image_buffer+strlen(image_buffer),"%02X",block->data.picture.data[i]);
+			  }
+			  jdata = json_object_new_string(image_buffer);
+			  json_object_object_add(jobj,"Image Data",jdata);
+			 }
+				//hexdump(filename, block->data.picture.data, block->data.picture.data_length, "    ");
+			break;
+		default:
+		  /*
+			 printf("  data contents:\n");
+			if(0 != block->data.unknown.data)
+				hexdump(filename, block->data.unknown.data, block->length, "    ");
+			 LATER wcg */
+			break;
+	}
+
+	return (jobj);
 }

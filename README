@@ -18,6 +18,28 @@
  */
 
 
+2014-11-30
+Modified by Waitman Gobble <ns@waitman.net>
+added --output-json to metaflac
+
+This switch causes metaflac to ouput in json format
+(see https://gist.github.com/waitman/847a8cae4a650a8898ee for example output,
+ and https://github.com/waitman/goflac for example use)
+
+1) import json-c into src/share
+2) json-c headers in include/json-c
+3) update Makefiles to build json-c and link metaflac 
+
+**NOTE: Makefile for json-c  isn't working 100%, temporary work-around is to :
+
+cd to src/share/json-c, then run # bash autogen.sh, then # ./configure and
+# make
+
+then switch back up to project root and build.
+
+
+
+
 FLAC is an Open Source lossless audio codec developed by Josh Coalson from 2001
 to 2009.
 

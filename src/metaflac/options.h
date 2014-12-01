@@ -189,6 +189,7 @@ typedef struct {
 	FLAC__bool show_long_help;
 	FLAC__bool show_version;
 	FLAC__bool application_data_format_is_hexdump;
+	FLAC__bool output_json; /* mod wcg */
 	struct {
 		Operation *operations;
 		unsigned num_operations;

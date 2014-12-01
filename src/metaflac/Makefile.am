@@ -49,6 +49,7 @@ metaflac_LDADD = \
 	$(top_builddir)/src/share/replaygain_analysis/libreplaygain_analysis.la \
 	$(top_builddir)/src/share/getopt/libgetopt.la \
 	$(top_builddir)/src/share/utf8/libutf8.la \
+	$(top_builddir)/src/share/json-c/libjson.la \
 	$(top_builddir)/src/libFLAC/libFLAC.la \
 	@LIBICONV@
 

@@ -244,6 +244,9 @@ int long_usage(const char *message, ...)
 	fprintf(out, "    all metadata blocks are listed in text format.  Use the following options\n");
 	fprintf(out, "    to change this behavior:\n");
 	fprintf(out, "\n");
+	fprintf(out, "    --output-json\n"); /* mod wcg */
+	fprintf(out, "    Output format in json\n");
+	fprintf(out, "\n");
 	fprintf(out, "    --block-number=#[,#[...]]\n");
 	fprintf(out, "    An optional comma-separated list of block numbers to display.  The first\n");
 	fprintf(out, "    block, the STREAMINFO block, is block 0.\n");
